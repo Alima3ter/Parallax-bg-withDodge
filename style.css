@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Vazir";
+  src: url("./Font/Vazir.eot");
+  src: url("./font/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("./font/Vazir.woff2") format("woff2"),
+    url("./font/Vazir.woff") format("woff"),
+    url("./font/Vazir.ttf") format("truetype");
+}
+body {
+  font-family: "Vazir", Arial, Helvetica, sans-serif;
+}
+/* utility */
+a {
+  text-decoration: none;
+  color: #000;
+}
+p {
+  text-align: justify;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 1rem 0;
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.btn {
+  margin: 1rem;
+  padding: 0.7rem;
+  background: #115a82;
+  color: #f3f3f3;
+  border-radius: 10px;
+}
+.btn:hover {
+  background: #1972a7;
+}
+.btn-outline {
+  border: #111f43 2px solid;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  color: #111f43;
+  border-radius: 10px;
+}
+.btn-outline:hover {
+  background: #1972a7;
+  color: #fff;
+}
+/* main */
+.bg-main {
+  background: url(./Img/2019-dodge-challenger-srt-hellcat-redeye.jpg) no-repeat
+    center center/cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+nav {
+  text-align: center;
+  box-shadow: 0 0 20px 10px gray;
+  position: sticky;
+  top: 0;
+}
+nav ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+nav ul li a:hover {
+  background: rgba(177, 177, 177, 0.2);
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.active {
+  background: rgba(190, 188, 188, 0.2);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.card1 {
+  color: #fff;
+  opacity: 0.9;
+  background-image: linear-gradient(
+    to right top,
+    #152552,
+    #111f43,
+    #0e1a35,
+    #0c1426,
+    #060b19
+  );
+  position: relative;
+  height: 250px;
+}
+
+.card1 p {
+  padding-bottom: 1rem;
+}
+.card1 a {
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+}
+
+#bg-second {
+  background: url(./Img/wp9130169-dodge-demon-challenger-srt-4k-wallpapers.jpg)
+    no-repeat center center/cover;
+  height: 100vh;
+  background-attachment: fixed;
+
+  text-align: center;
+}
+
+/* contan us */
+.header-contant {
+  background: url(./Img/dodge_challenger_srt_demon_logo_3d_model_c4d_max_obj_fbx_ma_lwo_3ds_3dm_stl_1788554_o.jpg)
+    no-repeat center center/cover;
+  height: 50vh;
+}
+
+.form {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+.form img {
+  justify-self: center;
+  align-self: center;
+  order: 2;
+}
+.form form {
+  justify-self: center;
+  align-self: center;
+}
+
+#footer {
+  background-image: linear-gradient(
+    to left bottom,
+    #1972a7,
+    #115a82,
+    #0c425f,
+    #092c3f,
+    #051721
+  );
+  color: #fff;
+  height: 50px;
+}
+.flex-footer {
+  display: flex;
+  margin-top: 2.5px;
+  justify-content: space-between;
+  align-items: center;
+}
