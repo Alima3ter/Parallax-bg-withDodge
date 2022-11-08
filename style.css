@@ -117,10 +117,21 @@ nav ul li a:hover {
     no-repeat center center/cover;
   height: 100vh;
   background-attachment: fixed;
-
+  position: relative;
   text-align: center;
 }
-
+.transparent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , 50%);
+  background: rgba(121, 121, 121, 0.4);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.transparent:hover {
+  background: rgba(121, 121, 121, 0.6);
+}
 /* contan us */
 .header-contant {
   background: url(./Img/dodge_challenger_srt_demon_logo_3d_model_c4d_max_obj_fbx_ma_lwo_3ds_3dm_stl_1788554_o.jpg)
